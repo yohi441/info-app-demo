@@ -1,0 +1,28 @@
+.bg-color {
+    background-color: purple;
+}
+
+.btn-purple{
+    background-color: purple;
+}
+
+.btn-outline-secondary{
+    color: purple;
+    border: solid purple;
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active{
+    color: #FFF;
+    background: #6f5499;
+    border-color: #6f5499;
+}
+.btn-outline-light {
+    background: #6f5499;
+    color: #FFF;
+}
+.btn-outline-light:hover,
+.btn-outline-light:active{
+    color: purple;
+    border: solid purple;
+    background-color: none;
+}

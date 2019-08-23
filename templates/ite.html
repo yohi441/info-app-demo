@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>ITE faculty</h1>
+{% for object in object_list %}
+    <ul>
+        <li><a class="btn btn-outline-light btn-block" href="{% url 'faculty_detail' object.pk %}">{{ object.name }} {{ object.lastname }}</a></li>
+    </ul>
+{% endfor %}
+
+{% endblock content %}
