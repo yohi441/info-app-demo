@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ office }}</h1>
+<div class="row">
+        {% for object in object_list %}
+          <div align="center" class="col">
+            <a style="text-decoration: none;" href="{% url 'office_detail' object.pk %}">
+            <img src="{{ object.photo.url }}" height="130" width="130"/>
+            <p>{{object.name}} {{object.lastname}}<br> {{ object.position}}</p>
+            </a>
+            </div>
+        {% endfor %}
+{% endblock content %}

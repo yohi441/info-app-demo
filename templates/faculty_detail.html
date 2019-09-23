@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hello</h1>
-<img src="{{ object.photo.url }}"/>
-<p>{{ object.name }}</p>
+<h1></h1>
+<div class="row">
+    <div class="col">
+    <img src="{{ object.photo.url }}" height="300" width="300"/>
+    <p>{{ object.name }} {{ object.middle_initial }}. {{object.lastname}}</p>
+    <p>{{ object.office }}</p>
+    </div>
+    <div class="col">
+       <ul class="ml-5">
+           <li>Info : Instructor's Information</li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+    </div>
+</div>
+
 {% endblock %}

@@ -13,16 +13,17 @@
 
     <title>information kiosk</title>
   </head>
-  <body class="bg-color">
+  <body class="bg-color pt-3">
     <div class="container alert alert-success">
       <div class="row">
       <div class="col-3 pull-left">
-      <h1>Menu</h1>
+      </h1><a style="text-decoration: none; color: inherit;"href="{% url 'home' %}"><h1>Menu</h1></a>
       <ul class="list-unstyled">
-          <li><a class="btn btn-outline-secondary btn-block" href="{% url 'information' %}"><img src="{% static 'img/icons8-faq-200.png' %}" alt="icon" height="64" width="64" /><br/>Frequently Asked Question</a></li>
-          <li><a class="btn btn-outline-secondary btn-block mt-2" href="{% url 'school_map' %}"><img src="{% static 'img/icons8-map-64.png' %}" alt="icon" height="64" width="64" /><br />School map</a></li>
-          <li><a class="btn btn-outline-secondary btn-block mt-2" href="{% url 'departments' %}"><img src="{% static 'img/icons8-department-80.png' %}" alt="icon" height="64" width="64"/><br />Departments</a></li>
-          <li><a class="btn btn-outline-secondary btn-block mt-2" href="{% url 'office' %}"><img src="{% static 'img/icons8-office-96.png' %}" alt="icon" height="64" width="64"/><br />Offices</a></li>
+          <li><a class="btn btn-outline-secondary btn-block" style="font-size: 1.5vw;"href="{% url 'information' %}"><img src="{% static 'img/icons8-faq-200.png' %}" alt="icon" height="64" width="64" class="img-fluid"/><br/>Frequently Asked Question</a></li>
+          <li><a class="btn btn-outline-secondary btn-block mt-2" style="font-size: 1.5vw;"href="{% url 'school_map' %}"><img src="{% static 'img/icons8-map-64.png' %}" alt="icon" height="64" width="64" class="img-fluid"/><br />School map</a></li>
+          <li><a class="btn btn-outline-secondary btn-block mt-2" style="font-size: 1.5vw;" href="{% url 'departments' %}"><img src="{% static 'img/icons8-department-80.png' %}" alt="icon" height="64" width="64" class="img-fluid"/><br />Departments</a></li>
+          <li><a class="btn btn-outline-secondary btn-block mt-2" style="font-size: 1.5vw;"href="{% url 'office' %}"><img src="{% static 'img/icons8-office-96.png' %}" alt="icon" height="64" width="64"class="img-fluid"/><br />Offices</a></li>
+          <li><button class="btn btn-outline-secondary btn-block mt-2" style="font-size: 1.5vw;" onclick="javascript:history.go(-1);"><img src="{% static 'img/back.png' %}" alt="icon" height="64" width="64"class="img-fluid"/><br />Back Previous Page</button></li>
       </ul>
       </div>
       

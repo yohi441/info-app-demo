@@ -1,7 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ object.name }}</h1>
-<img src="{{ object.photo.url }}"/>
+<h1></h1>
+<div class="row">
+    <div class="col">
+        <img src="{{ object.photo.url }}" width="300" height="300"/>
+        <p>{{ object.name }} {{ object.lastname }}<br> <strong>{{object.position}}</strong></p>
+    </div>
+    <div class="col">
+        <ul class="ml-5">
+            <li>Information</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
 
 {% endblock content%}

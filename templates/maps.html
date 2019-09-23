@@ -2,5 +2,11 @@
 
 {% block content %}
 <h1>{{ object.name }}</h1>
-<img src="{{ object.photo.url }}"/>
+<img src="{{ object.map_photo.url }}" class="img-fluid"/><br>
+{% if object.map_description is not none %}
+<p>{{ object.map_description }}</p>
+{%endif%}
+<p>Image of {{object.name}}</p>
+<img src="{{ object.photo.url }}" class="img-fluid" height="300" width="400"/>
+
 {% endblock content %}

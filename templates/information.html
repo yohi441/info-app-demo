@@ -2,5 +2,10 @@
 
 {% block content %}
 <h1>Information</h1>
+{% for object in object_list %}
+<ul class="list-unstyled">
+    <li><a class="btn btn-outline-light btn-block" href="{% url 'information_detail' object.pk %}">{{ object.title }}</a></li>
+</ul>
+{% endfor %}
 
 {% endblock content %}

@@ -4,7 +4,7 @@
 <h1>Offices</h1>
 {% for object in object_list %}
 <ul class="list-unstyled">
-    <li><a class="btn btn-outline-light btn-block" href="{% url 'office_detail' object.pk %}">{{ object.name }}</a></li>
+    <li><a class="btn btn-outline-light btn-block" href="{% url 'office_list' object.pk %}">{{ object.name }}</a></li>
 </ul>
 {% endfor %}
 {%endblock content%}

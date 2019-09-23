@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ object.title }}</h1>
+<pre>{{ object.body }}</pre>
+{% if object.map_photo.url is not null %}
+<img src="{{ object.map_photo.url }}" width="800" height="600" class="img-fluid"/>
+{% endif %}
+
+{% endblock content %}

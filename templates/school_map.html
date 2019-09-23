@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
     <h1>School Map</h1>
+    <div class="img-wrapper"> 
+    <img src="{% static 'img/cdksite.svg' %}" height="500" width="800" class="img-fluid"/>
+    </div>
+   <div class="row">
     {% for object in object_list %}
-    <ul class="list-unstyled">
-        <li><a class="btn btn-outline-light btn-block" href="{% url 'maps' object.pk %}">{{ object.name }}</a></li>    
-    </ul>
+        <div class="col mt-3 btn-group">
+        <a class="btn btn-outline-light btn-md" href="{% url 'maps' object.pk %}">{{ object.name }}</a>
+        </div>  
     {% endfor %}
+   </div>
 {% endblock content %}
