@@ -78,16 +78,7 @@ WSGI_APPLICATION = 'information_kiosk.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-""" DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cdk_information_kiosk',
-        'USER': 'cdkadmin',
-        'HOST' : 'localhost',
-        'PASSWORD': 'cdkadminpassword',
-        'PORT': '5432',
-    }
-} """
+
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
